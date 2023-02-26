@@ -1,0 +1,35 @@
+//html
+<section> 
+<div class="tri-state-toggle">
+          <input class="button" type="radio" name="toogle"id="one">
+           <input class="button" type="radio" name="toogle"id="two">
+           <input class="button" type="radio" name="toogle"id="three">
+        </div>
+<div><p>This is<p></p></p></div>
+</section>
+
+//css
+body{background-color: bisque;} 
+section{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+input{width:30px;
+    height:30px;
+appearance:none;
+  opacity:0;
+  border-radius: 50%;
+}
+input:hover{
+  cursor:pointer;
+}
+
+.tri-state-toggle{
+    height:36px;
+    width:fit-content;
+  display:flex;
+  border:2px solid black;
+  border-radius: 50px;
+}
