@@ -1,0 +1,12 @@
+
+function getkeys(ele){
+  if(window.event){ //IE
+    var text=String.fromCharCode(window.event.keyCode)+" was pushed"
+    
+  }else{ //Firefox
+    var text=String.fromCharCode(ele.keyCode)+" was pushed" ;
+   
+  }
+  document.getElementById('result').innerHTML=text;
+}
+document.onkeydown=getkeys;
